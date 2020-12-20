@@ -12,7 +12,8 @@ UMC (Unified Multi-modal Classification) model for classifying heterogeneous (mu
 # Detailed proposed framework pipeline
 This work has been published in the Journal of Neuroscience Methods, 2021. UMC is a novel framework to jointly classify multi-source and heterogeneous graphs. It consists of 4 main steps. (1) Extraction of feature vector embeddings using two different strategies: *depth-based* representation of each node in all graphs based on their local neighborhoods [(Bai et al., 2019)](https://link.springer.com/chapter/10.1007/978-3-030-46150-8_28) and *graph-wave* node embeddings via diffusion wavelets [(Donnat et al., 2018)](https://dl.acm.org/doi/10.1145/3219819.3220025), (2) Clustering feature vectors into *n<sub>t</sub>* clusters, each of which represents a node in the template graph to estimate, (3) Alignment of each graph from all modalities to the target template graph, (4) Training a linear classifier using the fixed-sized aligned brain graphs.
 
-<img src="figures/Pipeline.png" title="Pipeline" width="700">
+
+![fig2](figures/Pipeline.png)
 
 # Python and Libraries
 * [Python 3.7+](https://www.python.org/)
