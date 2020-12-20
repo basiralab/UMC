@@ -4,24 +4,24 @@ from UnifiedClassificationModel import MultipleClassifications
 
 
 # Reading simulated brain connectomes
-ALL_ASD_50 = np.load('Data/ALL_ASD_50.npy')
-ALL_NC_50  = np.load('Data/ALL_NC_50.npy')
-ALL_ASD_40 = np.load('Data/ALL_ASD_40.npy')
-ALL_NC_40  = np.load('Data/ALL_NC_40.npy')
-ALL_ASD_30 = np.load('Data/ALL_ASD_30.npy')
-ALL_NC_30  = np.load('Data/ALL_NC_30.npy')
+A = np.load('Data/Class1_50.npy')
+B = np.load('Data/Class1_40.npy')
+C = np.load('Data/Class1_30.npy')
+D  = np.load('Data/Class2_50.npy')
+E  = np.load('Data/Class2_40.npy')
+F  = np.load('Data/Class2_30.npy')
 
 
 # Combining ASD and NC subjects to get modalities
-Graphs_1 = np.concatenate([ALL_ASD_50, ALL_NC_50], axis=0)
-Graphs_2 = np.concatenate([ALL_ASD_40, ALL_NC_40], axis=0)
-Graphs_3 = np.concatenate([ALL_ASD_30, ALL_NC_30], axis=0)
+Graphs_1 = np.concatenate([A, D], axis=0)
+Graphs_2 = np.concatenate([B, E], axis=0)
+Graphs_3 = np.concatenate([C, F], axis=0)
 
 
 # Class label (i.e, health status):   ASD: 1 / NC: 0
-Labels_1 = np.array([1]*len(ALL_ASD_50) + [0]*len(ALL_NC_50))
-Labels_2 = np.array([1]*len(ALL_ASD_40) + [0]*len(ALL_NC_40))
-Labels_3 = np.array([1]*len(ALL_ASD_30) + [0]*len(ALL_NC_30))
+Labels_1 = np.array([1]*len(A) + [0]*len(D))
+Labels_2 = np.array([1]*len(B) + [0]*len(E))
+Labels_3 = np.array([1]*len(C) + [0]*len(F))
 
 
 # Putting all modalities together in a list

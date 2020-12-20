@@ -108,9 +108,9 @@ def Classify_Aligned_Connectomes(All_Aligned_Graphs, All_Labels, Tr_Ind, Tst_Ind
 
 
 
-def UCM(All_Graphs, All_Labels, nt=None, feat_method='DB', P=3, d=20, eta=0.9, stdScale_GW=True, corr='hard', Fold=5, seed=100):
+def UMC(All_Graphs, All_Labels, nt=None, feat_method='DB', P=3, d=20, eta=0.9, stdScale_GW=True, corr='hard', Fold=5, seed=100):
 	"""
-	<<< MAIN FUNCTION OF THE PROPOSED METHOD ("UNIFIED CLASSIFICATION MODEL") >>>
+	<<< MAIN FUNCTION OF THE PROPOSED METHOD ("UNIFIED MULTI-MODAL CLASSIFICATION") >>>
 
 	Classify (heterogeneous) multi-modal and multi-sized brain connectomes
 	derived from "M" distinct neuroimaging modalities using graph alignment.
