@@ -95,12 +95,12 @@ UMC paper:
 
 To install and run UMC code, check the following demo video:
 
-(LINK)
+https://youtu.be/Wj-i0QxTNso
 
 
 To learn more about how our framework works, check the following video:
 
-(LINK)
+https://youtu.be/AOviSQWduW8
 
 
 Official UMC repository:
